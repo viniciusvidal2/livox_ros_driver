@@ -234,7 +234,7 @@ uint32_t Lddc::PublishPointcloud2(LidarDataQueue *queue, uint32_t packet_num,
     last_timestamp = timestamp;
   }
   // Vinicius - just want system time here
-  cloud.header.stamp = ros::Time::now();
+//  cloud.header.stamp = ros::Time::now();
   cloud.row_step     = cloud.width * cloud.point_step;
   cloud.is_bigendian = false;
   cloud.is_dense     = true;
